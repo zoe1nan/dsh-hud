@@ -1,0 +1,9 @@
+# Task HUD for DeepSeek Harness.
+#
+# Host half folds the live task state of DSH sessions (todos projection +
+# turn lifecycle) into a small local file and keeps a detached topmost desktop
+# overlay window in sync. There is no in-page half: the HUD only lives on the
+# desktop, and only while the workbench is minimized or fully covered.
+- insert:
+    - id: dsh-hud
+      name: 'dsh-hud'

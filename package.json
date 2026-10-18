@@ -1,0 +1,43 @@
+{
+  "name": "dsh-hud",
+  "version": "1.1.0",
+  "private": false,
+  "type": "module",
+  "description": "Liquid-energy task HUD for DeepSeek Harness: a topmost desktop capsule that mirrors the active session's todo progress, with a hover percentage and a click-to-expand task card. Appears only when the workbench is minimized or covered by a fullscreen window, and stays out of screenshots.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zoe1nan/dsh-hud.git"
+  },
+  "homepage": "https://github.com/zoe1nan/dsh-hud#readme",
+  "bugs": {
+    "url": "https://github.com/zoe1nan/dsh-hud/issues"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "hud",
+    "todo",
+    "progress",
+    "overlay",
+    "windows"
+  ],
+  "exports": {
+    ".": "./index.js"
+  },
+  "files": [
+    "index.js",
+    "overlay.ps1",
+    "whale.png",
+    "whale.svg",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
